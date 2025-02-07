@@ -1,9 +1,12 @@
 name: Convert Rules to MRS
+run-name: Convert Rules to MRS
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'rule/**'
   workflow_dispatch:
 
 permissions:
