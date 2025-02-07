@@ -37,7 +37,7 @@ jobs:
       - name: Convert rules
         run: |
           mkdir -p output
-          exclude_list=("example.yaml" "Scam.yaml")
+          exclude_list=("example.yaml" "example.yaml")
           for file in $(find rule -type f -name "*.yaml"); do
             filename=$(basename "$file")
             if [[ " ${exclude_list[@]} " =~ " ${filename} " ]]; then
