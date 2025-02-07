@@ -1,5 +1,4 @@
 name: Convert Rules to MRS
-run-name: Convert Rules to MRS
 
 on:
   push:
