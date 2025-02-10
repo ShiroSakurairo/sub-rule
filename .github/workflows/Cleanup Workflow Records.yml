@@ -3,9 +3,9 @@ run-name: Cleanup Workflow Records
 
 on:
   workflow_run:
-    workflows: ["Convert Rules to MRS"]
-    types:
-      - completed
+    #workflows: ["Convert Rules to MRS"]
+    #types:
+    #  - completed
   workflow_dispatch:
 
 permissions:
