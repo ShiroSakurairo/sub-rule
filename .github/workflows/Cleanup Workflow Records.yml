@@ -2,7 +2,7 @@ name: Cleanup Workflow Records
 run-name: Cleanup Workflow Records
 
 on:
-  workflow_run:
+  #workflow_run:
     #workflows: ["Convert Rules to MRS"]
     #types:
     #  - completed
