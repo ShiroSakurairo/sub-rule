@@ -46,9 +46,9 @@ jobs:
               continue
             fi
             if [[ "$filename" == *ip* ]]; then
-              mihomo convert-ruleset ipcidr list "$file" "output/${filename%.list}.mrs"
+              mihomo convert-ruleset ipcidr text "$file" "output/${filename%.list}.mrs"
             else
-              mihomo convert-ruleset domain list "$file" "output/${filename%.list}.mrs"
+              mihomo convert-ruleset domain text "$file" "output/${filename%.list}.mrs"
             fi
           done
 
