@@ -1,1 +1,1 @@
-Personal Clash Rules and MRS Conversion
+Personal and MRS conversion
