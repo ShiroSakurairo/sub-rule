@@ -1,18 +1,22 @@
+#rules
 DOMAIN,ad.com,REJECT
 DOMAIN-SUFFIX,google.com,auto
 DOMAIN-KEYWORD,google,auto
 DOMAIN-REGEX,^abc.*com,PROXY
-GEOSITE,youtube,PROXY
-
 IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-IP-CIDR6,2620:0:2d0:200::7/32,auto
-IP-SUFFIX,8.8.8.8/24,PROXY
-IP-ASN,13335,DIRECT
-GEOIP,CN,DIRECT
 
-NETWORK,udp,DIRECT
+#classical #text
+DOMAIN-SUFFIX,google.com
+DOMAIN-KEYWORD,google
+DOMAIN,ad.com
+IP-CIDR,127.0.0.0/8
 
-AND,((DOMAIN,baidu.com),(NETWORK,UDP)),DIRECT
-OR,((NETWORK,UDP),(DOMAIN,baidu.com)),REJECT
-NOT,((DOMAIN,baidu.com)),PROXY
-SUB-RULE,(NETWORK,tcp),sub-rule
+#domain #text
+.blogger.com
+*.microsoft.com
++.xboxlive.com
+books.itunes.apple.com
+
+#classical #text
+192.168.1.0/24
+10.0.0.0.1/32
