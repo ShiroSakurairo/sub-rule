@@ -1,9 +1,9 @@
 #rules
-DOMAIN,ad.com,REJECT
-DOMAIN-SUFFIX,google.com,auto
-DOMAIN-KEYWORD,google,auto
-DOMAIN-REGEX,^abc.*com,PROXY
-IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- DOMAIN,ad.com,REJECT
+- DOMAIN-SUFFIX,google.com,auto
+- DOMAIN-KEYWORD,google,auto
+- DOMAIN-REGEX,^abc.*com,PROXY
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
 
 #classical #text
 DOMAIN-SUFFIX,google.com
