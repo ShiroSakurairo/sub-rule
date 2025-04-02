@@ -38,7 +38,7 @@ jobs:
       - name: Convert rules
         run: |
           mkdir -p output
-          exclude_list=("example.list" "example.list")
+          exclude_list=("regex.list" "example.list")
           for file in $(find rule -type f -name "*.list"); do
             filename=$(basename "$file")
             if [[ " ${exclude_list[@]} " =~ " ${filename} " ]]; then
