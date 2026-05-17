@@ -1,3 +1,4 @@
+
 mtalk.google.com
 mtalk4.google.com
 mtalk-staging.google.com
@@ -13,3 +14,6 @@ alt8-mtalk.google.com
 android.apis.google.com
 device-provisioning.googleapis.com
 firebaseinstallations.googleapis.com
+fcm.googleapis.com
+accounts.google.com
+iid.googleapis.com
